@@ -15,7 +15,10 @@ Vcs-Browser: https://github.com/ReAzem/gopass
 
 Package: gopass
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends} 
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         gnupg2 | gnupg,
+         tree (>= 1.7.0)
 Built-Using: ${misc:Built-Using}
 Description: pass implementation in Go
  gopass makes managing these individual password files extremely easy. All 
