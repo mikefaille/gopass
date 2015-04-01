@@ -4,4 +4,4 @@
 export DH_GOPKG := github.com/ReAzem/gopass
 
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --buildsystem=golang --with=golang,bash-completion
